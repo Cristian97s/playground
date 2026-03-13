@@ -5,3 +5,9 @@ from django.http import HttpResponse
 # usando funciones
 def index(request):
     return HttpResponse("hola mundo desde Django!")
+
+def monday(request):
+    return HttpResponse("Hola lunes")
+
+def tuesday(request):
+    return HttpResponse("Hola martes")
