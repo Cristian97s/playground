@@ -22,7 +22,7 @@
     <p>Stack de tecnologias: </p>
     <ul>
         {% for tool in  stock %}
-            <li>{{tool}}</li>
+            <li> <a href="{% url 'stack' tool.id %}">{{tool.name}}</a> </li>
         {% empty %}
             <li>No hay tecnologias disponibles</li>
         {% endfor %}
